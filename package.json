@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node_modules\\.bin\\webpack -p && babel src\\server.js -o src\\server-serve.js --presets es2015,react",
+    "serve": "SET NODE_ENV=production && node_modules\\.bin\\babel-node src\\server.js",
     "start": "node_modules\\.bin\\babel-node src\\server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
